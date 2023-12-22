@@ -1,0 +1,49 @@
+.cont{
+    display: flex;
+}
+.md1{
+    width: 50%;
+}
+.md2{
+    height: 40vh;
+    width: 50%;
+}
+#element{
+    color: rgb(0, 119, 255);
+    font-weight: 500;
+    font-size: 6vh;
+   }
+
+@media only screen and (max-width: 600px) {
+    nav{
+        height: px;
+    }
+    button{
+        display:none;
+    }
+
+    .cont{
+        padding: 10px 0px;
+        flex-direction: column-reverse;
+    }
+    .md1{
+        padding-top: 0px 10px;
+        height:60%;
+        width:100%;
+    }
+    .md2{
+        padding-top:0px 10px ;
+        height:100%;
+        width:100%;
+
+    }
+    .md2 img{
+        height: 150px;
+        width: 150px;
+    }
+    #element{
+        color: rgb(0, 119, 255);
+        font-weight: 500;
+        font-size: 3vh;
+       }
+  }
