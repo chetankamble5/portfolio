@@ -9,9 +9,11 @@
     width: 50%;
 }
 .md2{
-    filter: drop-shadow(10px 10px 10px rgb(52, 144, 249));
-    height: 40vh;
-    width: 30%;
+  
+   
+    filter: drop-shadow(0px 0px 100px rgb(37, 139, 255));
+    height: 50vh;
+    width: 50%;
     margin-left: 30%;
 }
 #element{
@@ -24,29 +26,30 @@
    }
    
    .mynav{
-       background-color: rgb(92, 92, 223);
+       background-color: rgb(192, 225, 255);
+       color: black;
        width:100%;
    }
    .mynavh1{
     padding-bottom: 4vh; 
     margin-left: 45%; 
     margin-right: 25%; 
-    color: aliceblue;
+    color: rgb(0, 0, 0);
      height: .1vh;
      width: 50%;
    }
 @media only screen and (max-width: 600px) {
   
         .mynav h1{
-            margin-left:35%;
-            
+            margin-left:30%;
+            color: black;   
         }
     button{
         display:none;
     }
 
     .cont{
-        height: 70vh; 
+        height: 80vh; 
         padding: 20px 20px;
         flex-direction: column-reverse;
     }
@@ -57,13 +60,14 @@
     }
     .md1 p{
         text-align: center;
-        font-size: 10px;
+        font-size: 15px;
     }
     .md1 h1{
         text-align: center;
         font-size: 30px;
     }
     .md2{
+        filter: drop-shadow(0px 0px 100px rgb(37, 139, 255));
         margin-top: 20%;
         margin-bottom:20%;
         margin-left: 25%;
