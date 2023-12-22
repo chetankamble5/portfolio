@@ -2,35 +2,50 @@
     height: 100vh; 
     padding: 20vh 15vw;
     display: flex;
+  background-color: rgb(190, 227, 254);
 }
 .md1{
     padding: 5vh 0vw 0vh 0vw;
     width: 50%;
 }
 .md2{
-    padding: ;
-    height: 50vh;
-    width: 50%;
+    filter: drop-shadow(10px 10px 10px rgb(52, 144, 249));
+    height: 40vh;
+    width: 30%;
+    margin-left: 30%;
 }
 #element{
     color: rgb(0, 119, 255);
     font-weight: 500;
     font-size: 6vh;
    }
-   .md2 p{
+   .md1 p{
     font-size: larger;
    }
    
+   .mynav{
+       background-color: rgb(92, 92, 223);
+       width:100%;
+   }
+   .mynavh1{
+    padding-bottom: 4vh; 
+    margin-left: 45%; 
+    margin-right: 25%; 
+    color: aliceblue;
+     height: .1vh;
+     width: 50%;
+   }
 @media only screen and (max-width: 600px) {
-    nav{
-        height: px;
-    }
+  
+        .mynav h1{
+            margin-left:25%;
+        }
     button{
         display:none;
     }
 
     .cont{
-        height: 100vh; 
+        height: 70vh; 
         padding: 20px 20px;
         flex-direction: column-reverse;
     }
@@ -58,7 +73,7 @@
     }
     #element{
         
-        color: rgb(0, 0, 0);
+        color: rgb(68, 30, 150);
         font-weight: 500;
         font-size: 20px;
         
