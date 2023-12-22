@@ -38,7 +38,8 @@
 @media only screen and (max-width: 600px) {
   
         .mynav h1{
-            margin-left:45%;
+            margin-left:40%;
+            margin-right: 45%;
         }
     button{
         display:none;
