@@ -1,20 +1,22 @@
 .cont{
-    height: 100vh; 
-    padding: 20vh 15vw;
+    height: 85vh; 
+    padding: 10vh 15vw;
     display: flex;
-  background-color: rgb(190, 227, 254);
+  background-color: rgb(208, 235, 255);
+  background-image: url('wave-haikei\ \(1\).png');
+  background-size: cover;
 }
 .md1{
     padding: 5vh 0vw 0vh 0vw;
-    width: 50%;
+    width: 60%;
 }
 .md2{
-  
-   
+
     filter: drop-shadow(0px 0px 100px rgb(37, 139, 255));
-    height: 50vh;
-    width: 50%;
-    margin-left: 30%;
+    height: 40vh;
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 #element{
     color: rgb(0, 119, 255);
@@ -26,17 +28,23 @@
    }
    
    .mynav{
-       background-color: rgb(192, 225, 255);
+       background-color: rgb(151, 212, 255);
        color: black;
        width:100%;
+       padding: 1px 20%;
    }
    .mynavh1{
     padding-bottom: 4vh; 
-    margin-left: 45%; 
-    margin-right: 25%; 
+   
     color: rgb(0, 0, 0);
      height: .1vh;
-     width: 50%;
+     
+   }
+   footer{
+    background-color: rgba(246, 199, 255, 0.788);
+   }
+   .type1{
+    height: 2vh;
    }
 @media only screen and (max-width: 600px) {
   
@@ -49,7 +57,7 @@
     }
 
     .cont{
-        height: 80vh; 
+        height: 70vh; 
         padding: 20px 20px;
         flex-direction: column-reverse;
     }
@@ -68,11 +76,11 @@
     }
     .md2{
         filter: drop-shadow(0px 0px 100px rgb(37, 139, 255));
-        margin-top: 20%;
-        margin-bottom:20%;
+        margin-top: 10%;
+        margin-bottom:10%;
         margin-left: 25%;
         padding:0px;
-        height:50%;
+        height:40%;
         width:50%;
 
     }
@@ -86,5 +94,5 @@
        .type1{
         text-align: center;
        }
-    
+   
   }
