@@ -80,7 +80,7 @@
     }
     .md1{
         padding: 0px 0px;
-        height:60%;
+        height:70%;
         width:100%;
     }
    
@@ -98,11 +98,11 @@
     }
     .md2{
         filter: drop-shadow(0px 0px 100px rgb(37, 139, 255));
-        margin-top: 20%;
+        margin-top: 30%;
         margin-bottom:10%;
         margin-left: 25%;
         padding:0px;
-        height:40%;
+        height:30%;
         width:50%;
 
     }
