@@ -1,5 +1,5 @@
 .cont{
-    height: 85vh; 
+    height: 80vh; 
     padding: 10vh 15vw;
     display: flex;
   background-color: rgb(240, 249, 255);
@@ -29,16 +29,19 @@
    }
    
    .mynav{
+    position: fixed;
+    z-index: 3;
        background-color: rgb(122, 98, 255);
        color: rgb(255, 255, 255);
        width:100%;
        padding: 1px 20%;
    }
-   .mynavh1{
-    padding-bottom: 4vh; 
-   
+   .mynav h1{
+    padding-bottom: 2vh; 
+   width: 20%;
     color: rgb(255, 255, 255);
      height: .1vh;
+     font-size: 70%;
      
    }
    footer{
@@ -54,19 +57,32 @@
    .col-sm-4{
     width: 20%;
    }
+   a{
+    text-decoration: none;
+    color: white;
+    font-size: 40%;
+   }
+   ul li{
+    text-align: center;
+    font-size: 50%;
+    font-weight: 500;
+   }
 .skills h1{
         margin-top: 5vh;
         color: beige;
-   
- 
+}
+li{
+    padding-left: 20px;
 }
 @media only screen and (max-width: 600px) {
   
         .mynav h1{
-        
+         
             color: rgb(255, 255, 255);   
         }
         .mynav{
+            z-index: 3;
+            position: fixed;
             padding: 0;
         }
     button{
@@ -97,6 +113,7 @@
         font-size: 30px;
     }
     .md2{
+        
         filter: drop-shadow(0px 0px 100px rgb(37, 139, 255));
         margin-top: 30%;
         margin-bottom:10%;
@@ -127,5 +144,8 @@
        }
        .row :nth-child(5){
         width: 50.0%;
+       }
+       ul li{
+        display: none;
        }
   }
