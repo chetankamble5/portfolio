@@ -1,11 +1,15 @@
 .cont{
-    height: 80vh; 
+    height: 95vh; 
     padding: 10vh 15vw;
     display: flex;
-  background-color: rgb(240, 249, 255);
+  background-color: rgb(205, 244, 254);
   /* background-color: black; */
   background-image: url('wave-haikei\ \(1\).png');
   background-size: cover;
+}
+.card{
+    width:30%;
+    margin: 2%;
 }
 .md1{
     padding: 5vh 0vw 0vh 0vw;
@@ -31,10 +35,10 @@
    .mynav{
     position: fixed;
     z-index: 3;
-       background-color: rgb(122, 98, 255);
+       background-color: #4525fd;
        color: rgb(255, 255, 255);
        width:100%;
-       padding: 1px 20%;
+       padding: 1px 15%;
    }
    .mynav h1{
     padding-bottom: 2vh; 
@@ -45,7 +49,7 @@
      
    }
    footer{
-    background-color: rgb(122, 98, 255);
+    background-color: #4525fd;
     color: antiquewhite;
    }
    .type1{
@@ -63,17 +67,46 @@
     font-size: 40%;
    }
    ul li{
-    text-align: center;
-    font-size: 50%;
+    
+    font-size: 40%;
     font-weight: 500;
    }
 .skills h1{
-        margin-top: 5vh;
+        padding: 3vh;
         color: beige;
+}
+.skills{
+    background-color: #7b76fffb;
 }
 li{
     padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
 }
+.pb{
+    margin-bottom: 1%;
+    border-radius: 0px 50px 50px 0px;
+    padding: %;
+    padding-right:30px;
+    border-style:none;
+  box-shadow: 0px 0px 10px 2px rgba(16, 0, 44, 0.21);
+    background:linear-gradient(to right,rgb(225, 148, 255),rgb(255, 255, 255));
+
+    
+    color: rgb(16, 0, 44);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.635));
+    font-weight: 600;
+    font-size:larger;
+    text-align:end;
+    
+}
+.projects{
+    background-color: #7b76fffb;
+}
+.cont2{
+    display: flex;
+}
+
 @media only screen and (max-width: 600px) {
   
         .mynav h1{
@@ -123,6 +156,9 @@ li{
         width:50%;
 
     }
+    .card-body{
+        background-color: #c5d2ff;
+    }
     #element{
         
         color: rgb(68, 30, 150);
@@ -134,7 +170,7 @@ li{
         text-align: center;
        }
        .col-sm-5{
-        width: 100%;
+        width: 50vw;
        }
        .col-sm-4{
         width: 33.3%;
@@ -148,4 +184,20 @@ li{
        ul li{
         display: none;
        }
+       .cont2{
+        display:inline-table;
+
+       }
+       .card{
+        width: 70%;
+       }
+       .imgdiv{
+        width: 100px;
+        height: 100px;
+       }
+       .pb{
+        font-size: 10px;
+        margin-top: 4%;
+        text-align: end;
+        font-weight: 900;
   }
