@@ -39,17 +39,17 @@ body{
    .mynav{
     position: fixed;
     z-index: 3;
-       background-color: #6397ff;
-       color: rgb(255, 255, 255);
+       background-color: #ffffff;
+       color: rgb(114, 175, 255);
        width:100%;
        padding: 1px 15%;
    }
    .mynav h1{
     padding-bottom: 2vh; 
    width: 20%;
-    color: rgb(255, 255, 255);
+    color: rgb(19, 102, 255);
      height: .1vh;
-     font-size: 70%;
+     font-size: 90%;
      
    }
    footer{
@@ -67,12 +67,10 @@ body{
    }
    a{
     text-decoration: none;
-    color: white;
+    color: rgb(77, 124, 255);
     
    }
    ul li{
-    
-   
     font-weight: 500;
    }
 .skills h1{
@@ -119,7 +117,7 @@ li{
   
         .mynav h1{
          
-            color: rgb(255, 255, 255);   
+            color: rgb(44, 96, 255);   
         }
         .mynav{
             z-index: 3;
