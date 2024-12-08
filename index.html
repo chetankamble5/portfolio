@@ -3,7 +3,6 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <link rel="stylesheet" href="media.css">
@@ -12,18 +11,14 @@
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style=" background-color: rgb(151, 212, 255);">
 
 <nav  class="navbar navbar-expand-sm  mynav">
   <div class="container-fluid">
     <h1 class="navbar-brand mynavh1" href="javascript:void(0)">chetan kamble</h1>
-    <ul class="nav" style="display: flex;">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">contact</a></li>
-      <li><a href="#">skills</a></li>
-    </ul>
-    <button style="width: 10%; border-radius:10px; font-size: 10px; height: 4vh; padding: 1px; border: none; background-color: rgb(0, 102, 255); margin: 1%; color: white; font-size: medium;">Button</button>
+    <button id="but" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
     </div>
   </div>
 </nav>
@@ -42,7 +37,7 @@
       });
     </script>
     <br><br>
-    <p style=" line-height: 30px; padding-bottom: 0px; font-size: xx-small; font-weight: 500; color: #11116a; margin-top: 3%;"><span style="font-size: medium; letter-spacing: 3px; font-weight:700; color: rgb(16, 46, 115);">Computer science Engineering student </span><br>
+    <p style=" line-height: 30px; padding: 0px; font-size: xx-small; font-weight: 500; color: #11116a; margin-top: 3%;"><span style="font-size: medium; letter-spacing: 3px; font-weight:700; color: rgb(16, 46, 115);">Computer science Engineering student </span><br>
       
       mobile no:- 9844538521<br>
       email id :- cpk9844@outlook.com
@@ -53,93 +48,14 @@
   </div> 
   </div>
 
-  <div class="skills">
-    
-    <h1 style=" background:linear-gradient(to right top,white,rgb(196, 219, 255) 40%, rgb(255, 255, 255)); box-shadow: 0px 0px 20px 20px #ffffff; color:black; z-index: 1; position:-webkit-sticky; top:5vh; position: sticky; padding:1% ;"">
-      <center>Skills</center>
-    </h1>
-  <br><br>
-  <center>
-    
-    <div class="col-sm-5" style="z-index: 0; margin-left:0vh; box-shadow: 0px 0px 15px 5px#05052c;  border-radius: 100px 100px 100px 100px ; background-color:rgb(172, 172, 172)"><img src="fuul.png" class="imgdiv" height="200" width="200" style="filter: drop-shadow(0px 0px 6px rgb(0, 0, 0));"></div>
-    <br><br>
-  </center>
-  
-    <div style=" width: 50vw;">
-    <div style="width: 70vw; " class="pb">Java</div>
-    <div style="width: 75vw;  "class="pb">Python </div>
-    <div style="width: 90vw; " class="pb">C-language</div>
-    <div style="width: 90vw;  "class="pb">FRONT-END WEB DEVELOPMENT (HTML,CSS.JavaSvript)</div>
-    <div style="width: 75vw;  "class="pb">FRONT-END WEB DEVELOPMENT- frameworks(React.js,Bootstrap)</div>
-    <div style="width: 80vw; "class="pb">SQL</div>
-    <div style="width: 90vw; "class="pb">Data Structures and Algorithms</div>
-    <div style="width: 60vw;  "class="pb">C++ Language</div>
-  </div>
 
 
-  
-    <center> 
-      <br><br>
-    <div class="container-fluid text-white">
-      <div class="row">
-        <div class="col-sm-4" style="margin-top:2vh; margin-bottom: 5vh;"><img src="html5-logo-31813.png" height="40" width="40"><p>html</p></div>
-        <div class="col-sm-4" style="margin-top:2vh; margin-bottom: 5vh;"><img src="html5-logo-31821.png" height="40" width="40"><p>css</p></div>
-        <div class="col-sm-4" style="margin-top:2vh; margin-bottom: 5vh;"><img src="js-icon.png" height="40" width="40"><p>JavaSvript</p></div>
-        <div class="col-sm-4 " style="margin-top:2vh; margin-bottom: 5vh;"><img src="bootstrap.png" height="40" width="40"><p>bootstrap</p></div>
-        <div class="col-sm-4 " style="margin-top:2vh; margin-bottom: 5vh;"><img src="react.png" height="40" width="40"><p>react.js</p></div>
-      </div>
-    </div>
-  </center>
-  </div>
-</div>
-  <div class="projects" >
-    <center>
-    <h1  style=" padding: 1%; background:linear-gradient(to right top,white,rgb(196, 219, 255) 40%, rgb(255, 255, 255)); box-shadow: 0px 0px 10px 20px #ffffff;  z-index: 1; position:-webkit-sticky; top:5vh; position: sticky; color: rgb(0, 0, 0);">
-      Projects
-    </h1>
-    <br>
-    <div class="container cont2">
-   
-     
-      <div class="card">
-        <img class="card-img-top" style="height: 30vh;" src="https://static.vecteezy.com/system/resources/previews/016/177/664/original/micro-manager-boss-using-magnifying-glass-keeps-eye-on-employees-work-micromanagement-bosses-toxic-managers-monitoring-every-detail-oversight-and-control-over-employee-work-and-processes-vector.jpg" alt="project-1 image" >
-        <div class="card-body">
-          <h4 class="card-title">Eye on Employee</h4>
-          <p class="card-text">Eye on employee is an Android App that helps to track Employee Activity and his location usin mobile GPS ,the app was built using Java , Xml </p>
-        
-        </div>
-      </div>
-      <div class="card" >
-        <img class="card-img-top" style="height: 30vh;" src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg" alt="project-1 image" >
-        
-        <div class="card-body">
-          <h4 class="card-title">E-Commerce Website</h4>
-          <p class="card-text">E-commerce Shopping Website<br> Created using Html,Bootstrap Css,React.js,Next Js,MongoDb,</p>
-        
-        </div>
-      </div>
-      
-      <div class="card" >
-        
-        
-        
-      <img class="card-img-top" style="height: 30vh;"  src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220208144344/Free-Resume-Builder-By-GeeksforGeeks-Create-Resume-Online.png"  alt="project-1 image" >
-      <div class="card-body">  
-      <h4 class="card-title">Resume Buider</h4>
-          <p class="card-text">The Website generates resume in pdf format<br>buit using html, tailwind css, node js, mogodb</p>
-        
-        </div>
-      </div>
-     
-      
-     
-      
+
+
+
+
     
-      
-    </div>
-  </div>
-  
-  <br>
+
   <div class="blockcode text-white">
     
   
@@ -194,22 +110,6 @@
         <small class="text-center mt-5" style="color:rgb(255, 255, 255)">&copy; ChetanKamble, 2023. All rights reserved.</small>
       </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
-
-
 </body>
 </html>
