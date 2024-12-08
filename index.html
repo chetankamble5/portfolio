@@ -1,122 +1,215 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Portfolio - Chetan Kamble</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="media.css">
+  <style>
+ 
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+<body>
 
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Navbar -->
-  <nav class="bg-blue-600 text-white py-4 shadow">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Chetan Kamble</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-gray-200">Home</a></li>
-        <li><a href="#projects" class="hover:text-gray-200">Projects</a></li>
-        <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
-        <li><a href="#skills" class="hover:text-gray-200">Skills</a></li>
-      </ul>
-      <button class="px-4 py-2 bg-gray-700 hover:bg-gray-800 rounded">Get in Touch</button>
+<nav  class="navbar navbar-expand-sm  mynav">
+  <div class="container-fluid">
+    <h1 class="navbar-brand mynavh1" href="javascript:void(0)">chetan kamble</h1>
+    <ul class="nav" style="display: flex;">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">skills</a></li>
+    </ul>
+    <button style="width: 10%; border-radius:10px; font-size: 10px; height: 4vh; padding: 1px; border: none; background-color: rgb(0, 102, 255); margin: 1%; color: white; font-size: medium;">Button</button>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="container mx-auto my-10 flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 text-center md:text-left">
-      <h1 class="text-4xl font-bold mb-4">Hi! I'm <span class="text-blue-600">Chetan Kamble</span></h1>
-      <p class="mb-6">Welcome to my portfolio website</p>
-      <div class="text-lg font-medium">
-        <span id="element"></span>
-      </div>
-      <script>
-        var typed = new Typed('#element', {
-          strings: ['Student', 'Web Developer', 'Web Designer'],
-          typeSpeed: 50,
-          loop: true
-        });
-      </script>
-      <p class="mt-4 text-sm text-gray-700">
-        Computer Science Engineering student at AGMR College of Engineering and Technology, Varur.<br>
-        Mobile: 9844538521<br>
-        Email: cpk9844@outlook.com
+  </div>
+</nav>
+<div class="container-fluid text-dark cont">
+    <div class="d1 md1">
+    <h1 class="nameh">Hi! <br>it's <span class="text-primary">Chetan</span> kamble</h1>
+    <p>Welcome to my portfolio website </p>
+    <div class="type1"><span id="element"></span></div>
+    
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Student', 'web developer','web designer'],
+        typeSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script>
+    <br><br>
+    <p style=" line-height: 30px; padding-bottom: 0px; font-size: xx-small; font-weight: 500; color: #11116a; margin-top: 3%;"><span style="font-size: medium; letter-spacing: 3px; font-weight:700; color: rgb(16, 46, 115);">Computer science Engineering student </span><br>
+      
+      mobile no:- 9844538521<br>
+      email id :- cpk9844@outlook.com
       </p>
-    </div>
-    <div class="md:w-1/2 mt-8 md:mt-0">
-      <img src="profile.png" alt="Profile Picture" class="rounded-full shadow-lg mx-auto w-64">
-    </div>
-  </section>
+  </div>
+  <div class="d2 md2" >
+   <img src="profile.png"  style="height: 100%; width: 100%;">
+  </div> 
+  </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="bg-white py-10">
-    <div class="container mx-auto">
-      <h2 class="text-center text-3xl font-bold mb-8">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-        <div class="p-4 bg-gray-100 rounded shadow">
-          <img src="html5-logo-31813.png" alt="HTML" class="mx-auto h-12 mb-2">
-          <p>HTML</p>
-        </div>
-        <div class="p-4 bg-gray-100 rounded shadow">
-          <img src="html5-logo-31821.png" alt="CSS" class="mx-auto h-12 mb-2">
-          <p>CSS</p>
-        </div>
-        <div class="p-4 bg-gray-100 rounded shadow">
-          <img src="js-icon.png" alt="JavaScript" class="mx-auto h-12 mb-2">
-          <p>JavaScript</p>
-        </div>
-        <div class="p-4 bg-gray-100 rounded shadow">
-          <img src="bootstrap.png" alt="Bootstrap" class="mx-auto h-12 mb-2">
-          <p>Bootstrap</p>
-        </div>
-        <div class="p-4 bg-gray-100 rounded shadow">
-          <img src="react.png" alt="React" class="mx-auto h-12 mb-2">
-          <p>React.js</p>
-        </div>
+  <div class="skills">
+    
+    <h1 style=" background:linear-gradient(to right top,white,rgb(196, 219, 255) 40%, rgb(255, 255, 255)); box-shadow: 0px 0px 20px 20px #ffffff; color:black; z-index: 1; position:-webkit-sticky; top:5vh; position: sticky; padding:1% ;"">
+      <center>Skills</center>
+    </h1>
+  <br><br>
+  <center>
+    
+    <div class="col-sm-5" style="z-index: 0; margin-left:0vh; box-shadow: 0px 0px 15px 5px#05052c;  border-radius: 100px 100px 100px 100px ; background-color:rgb(172, 172, 172)"><img src="fuul.png" class="imgdiv" height="200" width="200" style="filter: drop-shadow(0px 0px 6px rgb(0, 0, 0));"></div>
+    <br><br>
+  </center>
+  
+    <div style=" width: 50vw;">
+    <div style="width: 70vw; " class="pb">Java</div>
+    <div style="width: 75vw;  "class="pb">Python </div>
+    <div style="width: 90vw; " class="pb">C-language</div>
+    <div style="width: 90vw;  "class="pb">FRONT-END WEB DEVELOPMENT (HTML,CSS.JavaSvript)</div>
+    <div style="width: 75vw;  "class="pb">FRONT-END WEB DEVELOPMENT- frameworks(React.js,Bootstrap)</div>
+    <div style="width: 80vw; "class="pb">SQL</div>
+    <div style="width: 90vw; "class="pb">Data Structures and Algorithms</div>
+    <div style="width: 60vw;  "class="pb">C++ Language</div>
+  </div>
+
+
+  
+    <center> 
+      <br><br>
+    <div class="container-fluid text-white">
+      <div class="row">
+        <div class="col-sm-4" style="margin-top:2vh; margin-bottom: 5vh;"><img src="html5-logo-31813.png" height="40" width="40"><p>html</p></div>
+        <div class="col-sm-4" style="margin-top:2vh; margin-bottom: 5vh;"><img src="html5-logo-31821.png" height="40" width="40"><p>css</p></div>
+        <div class="col-sm-4" style="margin-top:2vh; margin-bottom: 5vh;"><img src="js-icon.png" height="40" width="40"><p>JavaSvript</p></div>
+        <div class="col-sm-4 " style="margin-top:2vh; margin-bottom: 5vh;"><img src="bootstrap.png" height="40" width="40"><p>bootstrap</p></div>
+        <div class="col-sm-4 " style="margin-top:2vh; margin-bottom: 5vh;"><img src="react.png" height="40" width="40"><p>react.js</p></div>
       </div>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="bg-gray-100 py-10">
-    <div class="container mx-auto">
-      <h2 class="text-center text-3xl font-bold mb-8">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white rounded shadow p-4">
-          <img src="https://static.vecteezy.com/system/resources/previews/016/177/664/original/micro-manager-boss-using-magnifying-glass-keeps-eye-on-employees-work-micromanagement-bosses-toxic-managers-monitoring-every-detail-oversight-and-control-over-employee-work-and-processes-vector.jpg"
-            alt="Project 1" class="w-full h-48 object-cover rounded mb-4">
-          <h3 class="text-xl font-bold">Eye on Employee</h3>
-          <p class="text-sm text-gray-700">An Android app for tracking employee activity and location using GPS. Built with Java and XML.</p>
-        </div>
-        <div class="bg-white rounded shadow p-4">
-          <img src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg"
-            alt="Project 2" class="w-full h-48 object-cover rounded mb-4">
-          <h3 class="text-xl font-bold">E-Commerce Website</h3>
-          <p class="text-sm text-gray-700">A shopping website built using React.js, Bootstrap, Next.js, and MongoDB.</p>
-        </div>
-        <div class="bg-white rounded shadow p-4">
-          <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220208144344/Free-Resume-Builder-By-GeeksforGeeks-Create-Resume-Online.png"
-            alt="Project 3" class="w-full h-48 object-cover rounded mb-4">
-          <h3 class="text-xl font-bold">Resume Builder</h3>
-          <p class="text-sm text-gray-700">Generates resumes in PDF format. Built using HTML, Tailwind CSS, Node.js, and MongoDB.</p>
+  </center>
+  </div>
+</div>
+  <div class="projects" >
+    <center>
+    <h1  style=" padding: 1%; background:linear-gradient(to right top,white,rgb(196, 219, 255) 40%, rgb(255, 255, 255)); box-shadow: 0px 0px 10px 20px #ffffff;  z-index: 1; position:-webkit-sticky; top:5vh; position: sticky; color: rgb(0, 0, 0);">
+      Projects
+    </h1>
+    <br>
+    <div class="container cont2">
+   
+     
+      <div class="card">
+        <img class="card-img-top" style="height: 30vh;" src="https://static.vecteezy.com/system/resources/previews/016/177/664/original/micro-manager-boss-using-magnifying-glass-keeps-eye-on-employees-work-micromanagement-bosses-toxic-managers-monitoring-every-detail-oversight-and-control-over-employee-work-and-processes-vector.jpg" alt="project-1 image" >
+        <div class="card-body">
+          <h4 class="card-title">Eye on Employee</h4>
+          <p class="card-text">Eye on employee is an Android App that helps to track Employee Activity and his location usin mobile GPS ,the app was built using Java , Xml </p>
+        
         </div>
       </div>
+      <div class="card" >
+        <img class="card-img-top" style="height: 30vh;" src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg" alt="project-1 image" >
+        
+        <div class="card-body">
+          <h4 class="card-title">E-Commerce Website</h4>
+          <p class="card-text">E-commerce Shopping Website<br> Created using Html,Bootstrap Css,React.js,Next Js,MongoDb,</p>
+        
+        </div>
+      </div>
+      
+      <div class="card" >
+        
+        
+        
+      <img class="card-img-top" style="height: 30vh;"  src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220208144344/Free-Resume-Builder-By-GeeksforGeeks-Create-Resume-Online.png"  alt="project-1 image" >
+      <div class="card-body">  
+      <h4 class="card-title">Resume Buider</h4>
+          <p class="card-text">The Website generates resume in pdf format<br>buit using html, tailwind css, node js, mogodb</p>
+        
+        </div>
+      </div>
+     
+      
+     
+      
+    
+      
     </div>
-  </section>
+  </div>
+  
+  <br>
+  <div class="blockcode text-white">
+    
+  
+    <footer class="page-footer shadow text-white ">
+      <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div>
+            <a href="/" class="d-flex align-items-center p-0 text-white">
+              
+              <span class="ms-3 h5 font-weight-bold">Chetan Kamble</span>
+            </a>
+            <p class="my-3" style="width: 250px; color:rgb(255, 255, 255)">
+           i am a compuer science engineering Student at Agm rural college of engineering and technology
+            </p>
+           
+          </div>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-blue-600 text-white py-6">
-    <div class="container mx-auto text-center">
-      <h2 class="text-xl font-bold">Contact Me</h2>
-      <p class="text-sm mt-2">Email: cpk9844@outlook.com</p>
-      <p class="text-sm">Phone: 9844538521</p>
-      <p class="mt-4">&copy; 2024 Chetan Kamble. All Rights Reserved.</p>
-    </div>
-  </footer>
+
+          <div>
+            <p class="h5 mb-4" style="font-weight: 600; color:rgb(255, 255, 255)"><i>Chetan Kamble</p>
+            <ul class="p-0" style="list-style: none; cursor: pointer; color: beige;">
+              <li class="my-2">
+                <a class="text-white" href="/">Resources</a>
+              </li>
+              <li class="my-2">
+                <a class="text-white" href="/">About Us</a>
+              </li>
+              <li class="my-2">
+                <a class="text-white" href="/">Contact</a>
+              </li>
+              <li class="my-2">
+                <a class="text-white" href="/">Blog</a>
+              </li>
+            </ul>
+          </div>
+        
+          <div>
+            <p class="h5 mb-4" style="font-weight: 600; color: rgb(255, 255, 255);">Help</p>
+            <ul class="p-0" style="list-style: none; cursor: pointer">
+              <li class="my-2">
+                <a class="text-white" href="/">Support</a>
+              </li>
+              <li class="my-2">
+                <a class="text-white" href="/">Sign Up</a>
+              </li>
+              <li class="my-2">
+                <a class="text-white" href="/">Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <small class="text-center mt-5" style="color:rgb(255, 255, 255)">&copy; ChetanKamble, 2023. All rights reserved.</small>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
 
 </body>
-
 </html>
