@@ -1,115 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan Prakash Kamble Portfolio</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f9;
+            color: #333;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #2b6cb0;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #2b6cb0;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .projects li, .skills li, .education li {
+            background: #edf2f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin: 5px 10px 0 0;
+            padding: 8px 15px;
+            border: 1px solid #2b6cb0;
+            border-radius: 5px;
+            color: #2b6cb0;
+            text-align: center;
+        }
+
+        .contact-links a:hover {
+            background: #2b6cb0;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+
+            .contact-links a {
+                padding: 6px 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
+    <div class="container">
+        <header>
+            <h1>Chetan Prakash Kamble</h1>
+            <p>cpk9844@outlook.com | 9844538521 | <a href="https://chetankamble.online/">Website</a> | Hubli 580028</p>
+        </header>
 
-<!-- Navbar -->
-<nav class="bg-blue-500 text-white p-4 shadow-lg sticky top-0 z-50">
-  <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-xl font-bold">Chetan Kamble</h1>
-    <ul class="flex space-x-4 text-sm font-semibold">
-      <li><a href="#" class="hover:text-gray-300">Home</a></li>
-      <li><a href="#" class="hover:text-gray-300">Projects</a></li>
-      <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-      <li><a href="#" class="hover:text-gray-300">Skills</a></li>
-    </ul>
-    <button class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800">Button</button>
-  </div>
-</nav>
+        <section>
+            <h2>About Me</h2>
+            <p>Final-year B.E. Computer Science student skilled in full-stack development, AI-driven projects, and collaborative problem-solving. Experienced in Python, JavaScript, C++, and Java, with proficiency in frameworks like React, Node.js, Django, and Flask. Passionate about developing scalable software solutions and adapting to emerging technologies.</p>
+        </section>
 
-<!-- Hero Section -->
-<div class="container mx-auto flex flex-wrap items-center py-10 px-4">
-  <div class="w-full md:w-1/2 text-center md:text-left">
-    <h1 class="text-4xl font-bold mb-4">Hi! It's <span class="text-blue-500">Chetan</span> Kamble</h1>
-    <p class="text-lg mb-4">Welcome to my portfolio website</p>
-    <span id="element" class="text-lg font-medium text-blue-500"></span>
-    <script>
-      var typed = new Typed('#element', {
-        strings: ['Student', 'Web Developer', 'Web Designer'],
-        typeSpeed: 50,
-        loop: true,
-      });
-    </script>
-    <p class="mt-6">
-      <span class="text-lg font-bold text-gray-700">Computer Science Engineering Student</span><br>
-      Mobile: 9844538521<br>
-      Email: cpk9844@outlook.com
-    </p>
-  </div>
-  <div class="w-full md:w-1/2">
-    <img src="profile.png" alt="Profile" class="rounded-full mx-auto shadow-lg" />
-  </div>
-</div>
+        <section>
+            <h2>Education</h2>
+            <ul class="education">
+                <li><strong>B.E. in Computer Science</strong> (AGMR College, Varur) - CGPA: 8.8/10</li>
+                <li><strong>Diploma in Computer Science</strong> (K.L.E Societies, Hubli) - CGPA: 8.1/10</li>
+                <li><strong>DCET Rank</strong>: 5996</li>
+                <li><strong>SSLC</strong> (NES & Rotary Kannada High School) - 79.2%</li>
+            </ul>
+        </section>
 
-<!-- Skills Section -->
-<section class="py-10 bg-white shadow-lg">
-  <h2 class="text-center text-3xl font-bold mb-6">Skills</h2>
-  <div class="container mx-auto">
-    <div class="flex flex-wrap justify-center gap-6">
-      <div class="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-        <img src="html5-logo-31813.png" alt="HTML" class="w-12 mx-auto mb-2">
-        <p>HTML</p>
-      </div>
-      <div class="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-        <img src="html5-logo-31821.png" alt="CSS" class="w-12 mx-auto mb-2">
-        <p>CSS</p>
-      </div>
-      <div class="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-        <img src="js-icon.png" alt="JavaScript" class="w-12 mx-auto mb-2">
-        <p>JavaScript</p>
-      </div>
-      <div class="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-        <img src="bootstrap.png" alt="Bootstrap" class="w-12 mx-auto mb-2">
-        <p>Bootstrap</p>
-      </div>
-      <div class="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-        <img src="react.png" alt="React.js" class="w-12 mx-auto mb-2">
-        <p>React.js</p>
-      </div>
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Programming: C, C++, Java, Python, JavaScript, SQL</li>
+                <li>Frameworks: React.js, Node.js, Django, Flask</li>
+                <li>UI/UX: Figma, Tailwind CSS, Bootstrap</li>
+                <li>Machine Learning: scikit-learn, pandas, NumPy, NLTK</li>
+                <li>Soft Skills: Teamwork, Problem-Solving, Time Management</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul class="projects">
+                <li><strong>Smartphone E-commerce Website</strong>: Full-stack platform for smartphones (Node.js, EJS, MySQL)</li>
+                <li><strong>Real-Time Code Editor</strong>: Multi-user collaboration tool (React, Socket.io)</li>
+                <li><strong>Eye on Employee</strong>: Employee tracking Android app (Java, XML)</li>
+                <li><strong>GPT Clone</strong>: NLP system using Gemini AI API</li>
+                <li><strong>Smart Agri</strong>: Agriculture equipment rental platform (Flask, SQLite)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Participated in national-level hackathons (SKV, Shridevi College)</li>
+                <li>Certified in Generative AI by Microsoft & LinkedIn</li>
+                <li>3rd Prize in National Drawing Competition</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:cpk9844@outlook.com">Email</a>
+                <a href="https://github.com/chetankambleofficial">GitHub</a>
+                <a href="https://www.linkedin.com/in/chetankambleofficial/">LinkedIn</a>
+            </div>
+        </section>
+
+        <footer>
+            © 2024 Chetan Prakash Kamble | All rights reserved.
+        </footer>
     </div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section class="py-10 bg-gray-100">
-  <h2 class="text-center text-3xl font-bold mb-6">Projects</h2>
-  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src="https://static.vecteezy.com/system/resources/previews/016/177/664/original/micro-manager-boss-using-magnifying-glass-keeps-eye-on-employees-work-micromanagement-bosses-toxic-managers-monitoring-every-detail-oversight-and-control-over-employee-work-and-processes-vector.jpg" alt="Eye on Employee" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Eye on Employee</h3>
-        <p class="text-gray-600">An Android app to track employee activity and location using GPS. Built with Java and XML.</p>
-      </div>
-    </div>
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg" alt="E-Commerce Website" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">E-Commerce Website</h3>
-        <p class="text-gray-600">A shopping platform using HTML, Bootstrap, React.js, Next.js, and MongoDB.</p>
-      </div>
-    </div>
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220208144344/Free-Resume-Builder-By-GeeksforGeeks-Create-Resume-Online.png" alt="Resume Builder" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Resume Builder</h3>
-        <p class="text-gray-600">Generates resumes in PDF format. Built with HTML, Tailwind CSS, Node.js, and MongoDB.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-blue-500 text-white py-6">
-  <div class="container mx-auto text-center">
-    <p>&copy; 2023 Chetan Kamble. All rights reserved.</p>
-  </div>
-</footer>
-
 </body>
 </html>
